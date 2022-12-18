@@ -38,7 +38,7 @@ section {
     text-align: center;
 }
 
-#hero .profile-img {
+#me .profile-img {
     width: 300px;
 }
 
@@ -47,7 +47,7 @@ footer {
     padding: 50px;
 }
 
-#hero h1 {
+#me h1 {
     font-size: 3em;
 }
 
