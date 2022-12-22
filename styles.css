@@ -103,7 +103,6 @@ div p {
 .grid {
     width: 300px;
     height:300px;
-    border:3px solid white;
     z-index: 1;
 }
 .grid div {
@@ -156,7 +155,10 @@ span:nth-child(5)
 {
     animation-delay: 1.0s;
 }
-
+span:nth-child(6)
+{
+    animation-delay: 1.2s;
+}
 a:link {
     color:#000000;
 }
@@ -173,7 +175,7 @@ font-size: 30px;
 width: 30px;
 text-align: center;
 text-decoration: none;
-border-radius: 50%;
+border-radius: 10%;
 }
 
 
@@ -184,15 +186,36 @@ opacity: 0.7;
 
 /* Set a specific color for each brand */
 
-/* Facebook */
-.fa-facebook {
-background: #3B5998;
+/* Medium */
+.fa-medium {
+background: #445E5F;
 color: white;
 }
 
 /* Twitter */
 .fa-twitter {
-background: #55ACEE;
+background: #445E5F;
 color: white;
 }
-  
+
+/* Twitter */
+.fa-linkedin{
+    background: #445E5F;
+    color: white;
+    }
+
+.fa-github {
+    background: #445E5F;
+    color: white;
+    }
+
+.centre {
+    display: flex;
+    justify-content: center;
+}
+
+.centre-item {
+    display: table-cell;
+    margin: auto;
+    display: block;
+}
