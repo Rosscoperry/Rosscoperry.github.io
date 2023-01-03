@@ -3,65 +3,95 @@
 <html>
     <head>
         <title>HTML Examples</title>
+        <style>
+            #red{
+                color:red;
+            }
+            .black{
+                color:black;
+            }
+            #intro{
+                width:50%
+            }
+            .infoBox{
+                background-color: aliceblue;
+                width: 50%;
+                float:right;
+                margin-top: 20px;
+                border: dotted 0.5px gray;
+                border-radius: 5px;
+            }
+            #questions{
+                clear:both;
+            }
+            div{
+                padding: 15px;
+                box-sizing:border-box;
+                font-family: 'Noto Sans SC', sans-serif;
+
+            }
+            @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@500&display=swap');
+        </style>
     </head>
     <body>
-        <img src="images\eggy-store.jpg" height=100 width=100>
-        <p>
-            <strong>Welcome to Eggy's store!&#8482</strong>
-        </p>
-        <p>
-            <em>Please register your visit using this application.</em>
-        </p>
-        
-        <p>Please read the following information:</p>
-        <a href="https://en.wikipedia.org/wiki/Cat" target="_blank"> How to be generous to cats. </a>
+        <div id="intro">
+            <img src="images\eggy-store.jpg" height=100 width=100>
+            <h2 id="red">
+                <strong>Welcome to Eggy's store!&#8482</strong>
+            </h2>
+            <p class="black">
+                <em>Please register your visit using this application.</em>
+            </p>
+        </div>
 
-        <ul>
-            <li>Licence Plate</li>
-            <li>Parking Bay Numbers</li>
-            <li>Name of Person you are visiting</li>
-        </ul>
+        <div class="infoBox">
+            <p><strong>Important: </strong>Please read the following information:</p>
+            <a href="https://en.wikipedia.org/wiki/Cat" target="_blank"> How to be generous to cats. </a>
+        </div>
 
-        <input type="text">
+        <div id="question">
+            <input type="text">
 
-        <input type="password">
+            <input type="password">
 
-        <input type="checkbox"> Do you have any fish on you?
+            <input type="checkbox"> Do you have any fish on you?
 
-        <p>What type of fish is it?</p>
+            <p>What type of fish is it?</p>
             <input type="radio" name="size">Salmon
             <input type="radio" name="size">Tuna
             <input type="radio" name="size">Cod
 
-        <select>
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-        </select>
+            <select>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+            </select>
 
-        <p>Please state what brought you here</p>
-        <textarea cols="50" rows="8"></textarea>
-        <input type="submit">
-        <input type="submit" value="Confirm">
+            <p>Please state what brought you here</p>
+            <textarea cols="50" rows="8"></textarea>
+            <input type="submit">
+            <input type="submit" value="Confirm">
 
-        <table border="1">
-            <tr>
-                <th width="200">Store Items</th>
-                <th width="300">Stock</th>
-            </tr>
-            <tr>
-                <td>Pidgeons</td>
-                <td>13</td>
-            </tr>
-            <tr>
-                <td>Mice</td>
-                <td>20</td>
-            </tr>
-            <tr>
-                <td>Dog toys</td>
-                <td><del>1</del> 0</td>
-            </tr>
-        </table>
+            <table border="1">
+                <tr>
+                    <th width="200">Store Items</th>
+                    <th width="300">Stock</th>
+                </tr>
+                <tr>
+                    <td>Pidgeons</td>
+                    <td>13</td>
+                </tr>
+                <tr>
+                    <td>Mice</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>Dog toys</td>
+                    <td><del>1</del> 0</td>
+                </tr>
+            </table>
+        </div>
+        
         <iframe width="560" height="315" src="https://www.youtube.com/embed/w0ffwDYo00Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
     </body>
