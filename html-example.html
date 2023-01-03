@@ -33,9 +33,10 @@
             @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@500&display=swap');
         </style>
     </head>
+
     <body>
         <div id="intro">
-            <img src="images\eggy-store.jpg" height=100 width=100>
+            <img id="eggy-click" src="images\eggy-store.jpg" height=100 width=100>
             <h2 id="red">
                 <strong>Welcome to Eggy's store!&#8482</strong>
             </h2>
@@ -70,7 +71,7 @@
             <p>Please state what brought you here</p>
             <textarea cols="50" rows="8"></textarea>
             <input type="submit">
-            <input type="submit" value="Confirm">
+            <input id="confirmation-button" type="submit" value="Confirm">
 
             <table border="1">
                 <tr>
@@ -93,6 +94,13 @@
         </div>
         
         <iframe width="560" height="315" src="https://www.youtube.com/embed/w0ffwDYo00Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+    <script>
+        document.getElementById("confirmation-button").onclick = function () {
+            alert("Welcome, your visit has been registered.")
+        }
+        document.getElementById("eggy-click").onclick = function () {
+            alert("Meow!!")
+        }
+    </script>
     </body>
 </html>
