@@ -28,7 +28,18 @@
                 padding: 15px;
                 box-sizing:border-box;
                 font-family: 'Noto Sans SC', sans-serif;
-
+            }
+            #confirmation-button{
+                margin-top:25px;
+                margin-bottom:15px;
+            }
+            #validation-box{
+                border: solid 1px gray;
+                display: none
+            }
+            #validation-messsage{
+                font-style:italic;
+                margin:0;
             }
             @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@500&display=swap');
         </style>
@@ -50,53 +61,69 @@
             <a href="https://en.wikipedia.org/wiki/Cat" target="_blank"> How to be generous to cats. </a>
         </div>
 
-        <div id="question">
-            <input type="text">
+        <div id="questions">
+            <div>
+                <p>Please state that you have fish</p>
+                <input type="checkbox"> Yes, I have fish to give you Eggy
+            </div>
 
-            <input type="password">
+            <div>
+                <p>What type of fish is it?</p>
+                <input type="radio" name="size">Salmon
+                <input type="radio" name="size">Tuna
+                <input type="radio" name="size">Cod
+            </div>
 
-            <input type="checkbox"> Do you have any fish on you?
+            <div>
+                <p>Please state how much fish you are willing to give</p>
+                <select>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                </select>
+            </div>
 
-            <p>What type of fish is it?</p>
-            <input type="radio" name="size">Salmon
-            <input type="radio" name="size">Tuna
-            <input type="radio" name="size">Cod
+            <div>
+                <p>Eggy's Goods Stock:</p>
+                <table border="1">
+                    <tr>
+                        <th width="200">Store Items</th>
+                        <th width="300">Stock</th>
+                    </tr>
+                    <tr>
+                        <td>Pigeons</td>
+                        <td>13</td>
+                    </tr>
+                    <tr>
+                        <td>Mice</td>
+                        <td>20</td>
+                    </tr>
+                    <tr>
+                        <td>Dog toys</td>
+                        <td><del>1</del> 0</td>
+                    </tr>
+                </table>
 
-            <select>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-            </select>
+            </div>
 
-            <p>Please state what brought you here</p>
-            <textarea cols="50" rows="8"></textarea>
-            <input type="submit">
-            <input id="confirmation-button" type="submit" value="Confirm">
+            <div>
+                <p>Please state your order</p>
+                <textarea cols="50" rows="8"></textarea>
+                <input id="confirmation-button" type="submit" value="Confirm">
+            </div>
+        </div>
 
-            <table border="1">
-                <tr>
-                    <th width="200">Store Items</th>
-                    <th width="300">Stock</th>
-                </tr>
-                <tr>
-                    <td>Pidgeons</td>
-                    <td>13</td>
-                </tr>
-                <tr>
-                    <td>Mice</td>
-                    <td>20</td>
-                </tr>
-                <tr>
-                    <td>Dog toys</td>
-                    <td><del>1</del> 0</td>
-                </tr>
-            </table>
+        <div id="validation-box">
+            <p id="validation-message"> Please ensure all information is entered correctly.</p>
         </div>
         
         <iframe width="560" height="315" src="https://www.youtube.com/embed/w0ffwDYo00Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <script>
         document.getElementById("confirmation-button").onclick = function () {
-            alert("Welcome, your visit has been registered.")
+            document.getElementById("validation-message").
+            innerHTML = "Please ensure all fields are complete";
+            document.getElementById("validation-box").
+            style.display = "block";
         }
         document.getElementById("eggy-click").onclick = function () {
             alert("Meow!!")
