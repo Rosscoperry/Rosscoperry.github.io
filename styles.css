@@ -219,3 +219,12 @@ color: white;
     margin: auto;
     display: block;
 }
+
+.success-box{
+    background-color:#addcb6;
+    position:fixed;
+    width:300px;
+    top:50%;
+    left:50%;
+    translate:translate(-50%,-50%);
+}

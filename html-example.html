@@ -55,7 +55,6 @@
                 <em>Please register your visit using this application.</em>
             </p>
         </div>
-
         <div class="infoBox">
             <p><strong>Important: </strong>Please read the following information:</p>
             <a href="https://en.wikipedia.org/wiki/Cat" target="_blank"> How to be generous to cats. </a>
@@ -63,10 +62,13 @@
 
         <div id="questions">
             <div>
-                <p>Please state that you have fish</p>
-                <input type="checkbox"> Yes, I have fish to give you Eggy
+                <p>Please enter your name</p>
+                <input id="input-name" type="text">
             </div>
-
+            <div>
+                <input type="checkbox"> Yes, I have fish to give you Eggy
+                <input id="input-checkbox" type="text">
+            </div>
             <div>
                 <p>What type of fish is it?</p>
                 <input type="radio" name="size">Salmon
@@ -104,30 +106,35 @@
                     </tr>
                 </table>
 
-            </div>
-
-            <div>
                 <p>Please state your order</p>
                 <textarea cols="50" rows="8"></textarea>
                 <input id="confirmation-button" type="submit" value="Confirm">
-            </div>
+                <div id="validation-box">
+                    <p id="validation-message"> Please ensure all information is entered correctly.</p>
+                </div>
         </div>
 
-        <div id="validation-box">
-            <p id="validation-message"> Please ensure all information is entered correctly.</p>
-        </div>
-        
+
         <iframe width="560" height="315" src="https://www.youtube.com/embed/w0ffwDYo00Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <script>
-        document.getElementById("confirmation-button").onclick = function () {
-            document.getElementById("validation-message").
-            innerHTML = "Please ensure all fields are complete";
-            document.getElementById("validation-box").
-            style.display = "block";
+    <script> 
+        document.getElementById("confirmation-button").onclick = function(){
+            document.getElementById("validation-box").style.display = "block";
+            if(document.getElementById("input-name").value ==""){
+                document.getElementById("validation-message").style.color = "red";
+                document.getElementById("validation-message").innerHTML = "Please enter your name.";
+            }else{if(document.getElementById("input-checkbox").value ==""){
+                document.getElementById("validation-message").style.color ="red";
+                document.getElementById("validation-message").innerHTML = "Please enter how much fish you are willing to give";
+            }else{
+                document.getElementById("validation-message").innerHTML = "Your fish donation has been recieved.";
+                document.getElementById("validation-box").classList.add("success-box");
+
         }
+    }
         document.getElementById("eggy-click").onclick = function () {
             alert("Meow!!")
         }
+    }
     </script>
     </body>
 </html>
