@@ -60,7 +60,7 @@ const ContactForm: FC = memo(() => {
         maxLength={250}
         name="message"
         onChange={onChange}
-        placeholder="Message"
+        placeholder="I'm currently broken atm :( sorry!"
         required
         rows={6}
       />

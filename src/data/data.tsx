@@ -19,6 +19,9 @@ import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
 import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
 import porfolioImage4 from '../images/portfolio/portfolio-4.jpg';
 import porfolioImage5 from '../images/portfolio/portfolio-5.jpg';
+import porfolioImage12 from '../images/portfolio/portfolio-12.jpg';
+import porfolioImage13 from '../images/portfolio/portfolio-13.jpg';
+import porfolioImage14 from '../images/portfolio/portfolio-14.png';
 import profilepic from '../images/profilepic.webp';
 import eggypic from '../images/testimonials/eggy-profilepic.jpg';
 import gpupic from '../images/testimonials/gpu-profilepic.png';
@@ -158,33 +161,21 @@ export const skills: SkillGroup[] = [
 export const portfolioItems: PortfolioItem[] = [
   {
     title: 'A Brief Look at the Air Quality of Aberdeen between 2018-2021',
-    description: 'Give a short description of your project here.',
+    description: 'Some analysis on the air quality of Aberdeen',
         url: 'https://medium.com/@rosscoperryy/a-brief-look-at-the-air-quality-of-aberdeen-in-the-past-3-years-3c69a5213b26',
-    image: porfolioImage1,
+    image: porfolioImage12,
   },
   {
     title: 'How to get started with analysing data in Dota 2 games',
-    description: 'Give a short description of your project here.',
+    description: 'Learn how to use a open source API to start analysing dota 2 games',
       url: 'https://medium.com/@rosscoperryy/how-to-get-started-with-analysing-data-in-dota-2-games-5d5cdbf78b90',
-    image: porfolioImage2,
-  },
-  {
-    title: "Eggy's Store",
-    description: 'Give a short description of your project here.',
-      url: '/html-example.html',
-    image: porfolioImage3,
-  },
-  {
-    title: 'Basic Number Guesser',
-    description: 'Give a short description of your project here.',
-      url: '/number-guesser.html',
-    image: porfolioImage4,
+    image: porfolioImage13,
   },
   {
     title: 'Movie Poster Search Made With React',
-    description: 'Give a short description of your project here.',
-      url: '/react-movie-poster/',
-    image: porfolioImage5,
+    description: 'A movie poster search app that calls a movie poster API',
+    url: '/react-movie-poster/',
+    image: porfolioImage14,
   }
 ];
 
