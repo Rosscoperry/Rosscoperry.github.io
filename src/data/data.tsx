@@ -91,7 +91,7 @@ export const heroData: Hero = {
       text: 'Contact',
       primary: false,
     },
-  ],
+  ]
 };
 
 /**
@@ -196,7 +196,7 @@ export const education: TimelineItem[] = [
     date: '09/2020 - 09/2021',
         location: 'University of Strathclyde',
         title: 'Machine Learning and Deep Learning (MSc) - Distinction',
-        content: <p>
+        content: <div>
             <ul>
                 <li><b>Core Modules</b> - Digital Signal Processing Principles, Image and Video Processing,
                 Intelligent Sensing, Reasoning and Deep Learning, Machine Learning for Data Analytics, Big Data Technologies,
@@ -206,13 +206,13 @@ export const education: TimelineItem[] = [
                     <b>Dissertation</b> - Improving clinical diagnosis through deep learning analysis of voice recordings
                 </li>
             </ul>
-        </p>
+        </div>
   },
   {
     date: '09/2015 - 09/2020',
       location: 'University of Glasgow',
       title: 'Biomedical Engineering (BEng) - with Honours of 2.1',
-      content: <p>
+      content: <div>
           <ul>
               <li><b>Core Modules</b> - Biosensors and Diagnostics, Microelectronics in Consumer Products, Rehabilitation Engineering, Bioethics for
                   Biomedical Engineering, Signal Processing of Biosignatures, Ultrasound Technology and Applications, Control Systems Analysis and
@@ -222,7 +222,7 @@ export const education: TimelineItem[] = [
                   <b>Dissertation</b> - Lane Swimming Assistive Device for Blind People
               </li>
           </ul>
-      </p>
+      </div>
   },
 ];
 
@@ -232,7 +232,7 @@ export const experience: TimelineItem[] = [
     location: 'Staffscanner',
         title: 'Data Scientist',
     content: (
-        <p>
+        <div>
             <ul>
                 <li>
                     My role's primary purpose was to find usefulness in the vast amount of data collected by users on the app/website
@@ -252,7 +252,7 @@ export const experience: TimelineItem[] = [
                     In a company of 3 employees, I am required to be a jack-of-all-trades with expertise in various areas.
                 </li>
             </ul>
-        </p>
+        </div>
     ),
   },
   {
@@ -275,20 +275,17 @@ export const testimonial: TestimonialSection = {
   imageSrc: testimonialImage,
   testimonials: [
     {
-      name: 'Eggy',
+      name: 'Eggy, the cat',
       text: 'Back stratching technique is statisfactory but belly rubs are 10/10',
-      image: eggypic,
     },
     {
-        name: "Ross's GPU",
+      name: "Ross's GPU",
       text: 'Help.',
-        image: gpupic,
     },
     {
         name: 'Confucius',
         text: "Real knowledge is to know the extent of one's ignorance.",
-        image: conpic,
-    },
+    }
   ]
 };
 
