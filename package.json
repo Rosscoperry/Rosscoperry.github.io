@@ -1,5 +1,6 @@
 {
-  "name": "react-resume-template",
+  "homepage": "http://ross-perry.co.uk",
+  "name": "ross-resume-webpage",
   "version": "2.0.0",
   "private": true,
   "scripts": {
@@ -9,13 +10,16 @@
     "dev": "yarn compile && yarn next dev",
     "lint": "yarn run -T prettier --write './src/**/*.{js,jsx,json,ts,tsx}' && eslint './src/**/*.{js,jsx,ts,tsx}' --fix --max-warnings=0",
     "start": "yarn next start",
-    "sitemap": "yarn next-sitemap"
+    "sitemap": "yarn next-sitemap",
+    "deploy": "gh-pages -b improvement/redo-main-page -d build",
+    "eject": "react-scripts eject"
   },
   "dependencies": {
     "@headlessui/react": "^1.5.0",
     "@heroicons/react": "^1.0.6",
     "autoprefixer": "^10.4.2",
     "classnames": "^2.3.1",
+    "gh-pages": "^5.0.0",
     "next": "^12.1.0",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
