@@ -14,18 +14,10 @@ import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
 import TwitterIcon from '../components/Icon/TwitterIcon';
 import heroImage from '../images/header-background.webp';
-import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
-import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
-import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
-import porfolioImage4 from '../images/portfolio/portfolio-4.jpg';
-import porfolioImage5 from '../images/portfolio/portfolio-5.jpg';
 import porfolioImage12 from '../images/portfolio/portfolio-12.jpg';
 import porfolioImage13 from '../images/portfolio/portfolio-13.jpg';
 import porfolioImage14 from '../images/portfolio/portfolio-14.png';
 import profilepic from '../images/profilepic.webp';
-import eggypic from '../images/testimonials/eggy-profilepic.jpg';
-import gpupic from '../images/testimonials/gpu-profilepic.png';
-import conpic from '../images/testimonials/confucius-profilepic.jpg';
 import testimonialImage from '../images/testimonial.webp';
 import {
   About,
