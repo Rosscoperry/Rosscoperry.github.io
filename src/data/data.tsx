@@ -17,6 +17,7 @@ import heroImage from '../images/header-background.webp';
 import porfolioImage12 from '../images/portfolio/portfolio-12.jpg';
 import porfolioImage13 from '../images/portfolio/portfolio-13.jpg';
 import porfolioImage14 from '../images/portfolio/portfolio-14.png';
+import porfolioImage15 from '../images/portfolio/portfolio-15.webp';
 import profilepic from '../images/profilepic.webp';
 import testimonialImage from '../images/testimonial.webp';
 import {
@@ -168,6 +169,12 @@ export const portfolioItems: PortfolioItem[] = [
     description: 'A movie poster search app that calls a movie poster API',
     url: '/react-movie-poster/',
     image: porfolioImage14,
+  },
+  {
+    title: 'Semantic Lamp using Python',
+    description: 'A program that controls the colour of a lamp using the semantics of utterances picked up by a microphone',
+    url: 'https://github.com/Rosscoperry/Semantic-Lamp',
+    image: porfolioImage15,
   }
 ];
 
